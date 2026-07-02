@@ -1,0 +1,15 @@
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\bin\Debug\net10.0\Agenda.exe
+C:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\bin\Debug\net10.0\Agenda.deps.json
+C:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\bin\Debug\net10.0\Agenda.runtimeconfig.json
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\bin\Debug\net10.0\Agenda.dll
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\bin\Debug\net10.0\Agenda.pdb
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.AssemblyInfoInputs.cache
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.AssemblyInfo.cs
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.csproj.CoreCompileInputs.cache
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.sourcelink.json
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.dll
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\refint\Agenda.dll
+c:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.pdb
+C:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\Agenda.genruntimeconfig.cache
+C:\Users\ANDREA GUADALUPE\Documents\Proyectos\.NET\Agenda\obj\Debug\net10.0\ref\Agenda.dll
