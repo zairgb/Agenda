@@ -173,11 +173,11 @@ Durante el desarrollo de este proyecto se utilizan los siguientes conceptos:
 | Agregar contacto | ✅ |
 | Mostrar contactos | ✅ |
 | Buscar contacto | ✅ |
-| Editar contacto | 🚧 |
-| Eliminar contacto | 🚧 |
-| Guardar en JSON | ⏳ |
-| Cargar desde JSON | ⏳ |
-| Validaciones | ⏳ |
+| Editar contacto | ✅ |
+| Eliminar contacto | ✅ |
+| Guardar en JSON | ✅ |
+| Cargar desde JSON | ✅ |
+| Validaciones | 🚧 |
 
 **Leyenda**
 
