@@ -1,8 +1,11 @@
-public class Contacto
+namespace Agenda
 {
-    public int ID { get; set; }
-    public string Nombre { get; set; }
-    public string Telefono { get; set; }
-    public string CorreoElectronico { get; set; }
-    public string Mensaje { get; set; }
+    public class Contacto
+    {
+        public int ID { get; set; }
+        public string Nombre { get; set; } = string.Empty;
+        public string Telefono { get; set; } = string.Empty;
+        public string CorreoElectronico { get; set; } = string.Empty;
+        public string Mensaje { get; set; } = string.Empty;
+    }
 }

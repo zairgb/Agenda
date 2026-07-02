@@ -1,14 +1,17 @@
-public class Agenda
+namespace Agenda
 {
-    private List<Contacto> Contactos = new();
-
-    public void AgregarContacto(Contacto contacto)
+    public class Agenda
     {
-        Contactos.Add(contacto);
-    }
+        private readonly List<Contacto> Contactos = [];
 
-    public List<Contacto> VerContactos()
-    {
-        return Contactos;
+        public void AgregarContacto(Contacto contacto)
+        {
+            Contactos.Add(contacto);
+        }
+
+        public List<Contacto> VerContactos()
+        {
+            return Contactos;
+        }
     }
 }

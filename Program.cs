@@ -1,6 +1,11 @@
-﻿Console.Title = "Agenda";
+﻿using System.IO;
+using System.Text.Json;
+using Agenda;
 
-Agenda agenda = new();
+Console.Title = "Agenda";
+
+Agenda.Agenda agenda = new();
+string archivoContactos = "contactos.json";
 
 int opcion;
 
@@ -60,7 +65,7 @@ do
                 Console.WriteLine($"Correo electrónico: {contacto.CorreoElectronico}");
                 Console.WriteLine();
             }
-            
+
             Console.WriteLine("\nPresiona ENTER para continuar...");
             Console.ReadLine();
             break;
@@ -86,6 +91,51 @@ do
             else
             {
                 Console.WriteLine("No se encontraron contactos con ese nombre.");
+            }
+
+            Console.WriteLine("\nPresiona ENTER para continuar...");
+            Console.ReadLine();
+            break;
+        case 6:
+            try
+            {
+                var contactos = agenda.VerContactos();
+                var json = JsonSerializer.Serialize(contactos, new JsonSerializerOptions { WriteIndented = true });
+                File.WriteAllText(archivoContactos, json);
+                Console.WriteLine("Contactos guardados correctamente.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al guardar: {ex.Message}");
+            }
+
+            Console.WriteLine("\nPresiona ENTER para continuar...");
+            Console.ReadLine();
+            break;
+
+        case 7:
+            try
+            {
+                if (File.Exists(archivoContactos))
+                {
+                    var json = File.ReadAllText(archivoContactos);
+                    var contactos = JsonSerializer.Deserialize<List<Contacto>>(json) ?? new List<Contacto>();
+                    // Reemplazar la agenda actual por los contactos cargados
+                    agenda = new Agenda.Agenda();
+                    foreach (var c in contactos)
+                    {
+                        agenda.AgregarContacto(c);
+                    }
+                    Console.WriteLine("Contactos cargados correctamente.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontró el archivo de contactos.");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Error al cargar: {ex.Message}");
             }
 
             Console.WriteLine("\nPresiona ENTER para continuar...");
