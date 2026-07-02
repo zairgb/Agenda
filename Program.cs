@@ -96,6 +96,51 @@ do
             Console.WriteLine("\nPresiona ENTER para continuar...");
             Console.ReadLine();
             break;
+
+        case 4:
+            Console.WriteLine("Ingrese el ID del contacto a editar:");
+            if (int.TryParse(Console.ReadLine(), out int idEditar))
+            {
+                var contacto = agenda.VerContactos().FirstOrDefault(c => c.ID == idEditar);
+                if (contacto != null)
+                {
+                    Console.WriteLine("Ingrese el nuevo nombre (o presione ENTER para mantener el actual):");
+                    string nuevoNombre = Console.ReadLine() ?? string.Empty;
+                    if (!string.IsNullOrEmpty(nuevoNombre))
+                    {
+                        contacto.Nombre = nuevoNombre;
+                    }
+
+                    Console.WriteLine("Ingrese el nuevo teléfono (o presione ENTER para mantener el actual):");
+                    string nuevoTelefono = Console.ReadLine() ?? string.Empty;
+                    if (!string.IsNullOrEmpty(nuevoTelefono))
+                    {
+                        contacto.Telefono = nuevoTelefono;
+                    }
+
+                    Console.WriteLine("Ingrese el nuevo correo electrónico (o presione ENTER para mantener el actual):");
+                    string nuevoCorreo = Console.ReadLine() ?? string.Empty;
+                    if (!string.IsNullOrEmpty(nuevoCorreo))
+                    {
+                        contacto.CorreoElectronico = nuevoCorreo;
+                    }
+
+                    Console.WriteLine("Contacto editado correctamente.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontró un contacto con ese ID.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("ID inválido.");
+            }
+
+            Console.WriteLine("\nPresiona ENTER para continuar...");
+            Console.ReadLine();
+            break;
+
         case 6:
             try
             {
