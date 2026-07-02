@@ -141,6 +141,30 @@ do
             Console.ReadLine();
             break;
 
+        case 5:
+            Console.WriteLine("Ingrese el ID del contacto a eliminar:");
+            if (int.TryParse(Console.ReadLine(), out int idEliminar))
+            {
+                var contacto = agenda.VerContactos().FirstOrDefault(c => c.ID == idEliminar);
+                if (contacto != null)
+                {
+                    agenda.VerContactos().Remove(contacto);
+                    Console.WriteLine("Contacto eliminado correctamente.");
+                }
+                else
+                {
+                    Console.WriteLine("No se encontró un contacto con ese ID.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("ID inválido.");
+            }
+
+            Console.WriteLine("\nPresiona ENTER para continuar...");
+            Console.ReadLine();
+            break;
+
         case 6:
             try
             {
