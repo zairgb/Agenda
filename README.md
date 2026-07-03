@@ -177,7 +177,7 @@ Durante el desarrollo de este proyecto se utilizan los siguientes conceptos:
 | Eliminar contacto | ✅ |
 | Guardar en JSON | ✅ |
 | Cargar desde JSON | ✅ |
-| Validaciones | 🚧 |
+| Validaciones | ✅ |
 
 **Leyenda**
 
@@ -257,7 +257,7 @@ Este proyecto forma parte de una serie de aplicaciones desarrolladas para aprend
 | Proyecto | Estado |
 |----------|--------|
 | ✅ 01 - Calculadora | Finalizado |
-| 🚧 02 - Agenda Electrónica | En desarrollo |
+| ✅ 02 - Agenda Electrónica | En desarrollo |
 | ⏳ 03 - Sistema de Inventario | Pendiente |
 | ⏳ 04 - Cajero Automático | Pendiente |
 | ⏳ 05 - API REST | Pendiente |
