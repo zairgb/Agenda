@@ -29,7 +29,24 @@ do
 
     Console.Write("Opción: ");
     string opcionInput = Console.ReadLine() ?? string.Empty;
-    opcion = int.TryParse(opcionInput, out int opcionParsed) ? opcionParsed : 0;
+    bool esNumero = !string.IsNullOrEmpty(opcionInput);
+    foreach (char c in opcionInput)
+    {
+        if (!char.IsDigit(c))
+        {
+            esNumero = false;
+            break;
+        }
+    }
+    if (esNumero && int.TryParse(opcionInput, out int opcionParsed))
+    {
+        opcion = opcionParsed;
+    }
+    else
+    {
+        opcion = 0;
+        Console.WriteLine("Ingrese solo números.");
+    }
 
     switch (opcion)
     {
@@ -37,11 +54,45 @@ do
             Console.WriteLine("Ingrese el nombre del contacto:");
             string nombre = Console.ReadLine() ?? string.Empty;
 
-            Console.WriteLine("Ingrese el teléfono del contacto:");
-            string telefono = Console.ReadLine() ?? string.Empty;
+            string telefono = string.Empty;
+            bool telefonoValido = false;
+            while (!telefonoValido)
+            {
+                Console.WriteLine("Ingrese el teléfono del contacto (solo números):");
+                telefono = Console.ReadLine() ?? string.Empty;
+                if (!string.IsNullOrEmpty(telefono))
+                {
+                    telefonoValido = true;
+                    foreach (char c in telefono)
+                    {
+                        if (!char.IsDigit(c))
+                        {
+                            telefonoValido = false;
+                            break;
+                        }
+                    }
+                }
+                if (!telefonoValido)
+                {
+                    Console.WriteLine("El teléfono debe contener únicamente números.");
+                }
+            }
 
             Console.WriteLine("Ingrese el correo electrónico del contacto:");
-            string correoElectronico = Console.ReadLine() ?? string.Empty;
+            string correoElectronico = string.Empty;
+            bool correoValido = false;
+            while (!correoValido)
+            {
+                correoElectronico = Console.ReadLine() ?? string.Empty;
+                if (!string.IsNullOrEmpty(correoElectronico) && correoElectronico.Contains("@"))
+                {
+                    correoValido = true;
+                }
+                else
+                {
+                    Console.WriteLine("Ingrese un correo electrónico válido.");
+                }
+            }
 
             agenda.AgregarContacto(new Contacto
             {
