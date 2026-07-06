@@ -43,10 +43,10 @@ Este proyecto fue desarrollado para practicar los conceptos fundamentales de C# 
 - ✅ Agregar contactos.
 - ✅ Mostrar todos los contactos.
 - ✅ Buscar contactos por nombre.
-- 🚧 Editar contactos.
-- 🚧 Eliminar contactos.
-- ⏳ Guardar contactos en JSON.
-- ⏳ Cargar contactos desde JSON.
+- ✅ Editar contactos.
+- ✅ Eliminar contactos.
+- ✅ Guardar contactos en JSON.
+- ✅ Cargar contactos desde JSON.
 
 ---
 
