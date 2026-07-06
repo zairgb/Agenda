@@ -2,7 +2,7 @@
 
 ![.NET](https://img.shields.io/badge/.NET-9.0-purple)
 ![C#](https://img.shields.io/badge/C%23-Language-blue)
-![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-orange)
+![Estado](https://img.shields.io/badge/Estado-terminado-green)
 ![Licencia](https://img.shields.io/badge/Licencia-PCA-red)
 
 Una aplicación de consola desarrollada en **C#** y **.NET** para administrar una agenda de contactos. Este proyecto forma parte de mi ruta de aprendizaje en el ecosistema .NET y tiene como objetivo reforzar los fundamentos del lenguaje mediante la implementación de un sistema CRUD.
